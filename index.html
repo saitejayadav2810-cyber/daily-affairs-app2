@@ -6,6 +6,9 @@
   <meta name="theme-color" content="#0a0a12" />
   <title>AGRIMETS</title>
 
+  <!-- ── PWA Manifest (required for APK generation) ── -->
+  <link rel="manifest" href="manifest.json" />
+
   <!-- ── Service Worker: forces network-first on every load ── -->
   <script>
     if ('serviceWorker' in navigator) {
@@ -367,6 +370,7 @@
       <button class="share-skip-btn" id="share-skip-btn">Continue studying</button>
     </div>
   </div>
+
   <script>
     (function() {
       var v = window._cbv || Date.now();
